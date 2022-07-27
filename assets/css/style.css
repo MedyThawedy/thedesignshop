@@ -32,8 +32,8 @@ header>nav>ul {
     font-weight: bold;
 }
 
-header > div> img.icon {
-    display:none;
+header>div>img.icon {
+    display: none;
 }
 
 header>nav>ul>li a {
@@ -52,7 +52,7 @@ header>nav>ul>li a:visited {
 }
 
 .clsLogo:hover {
-    opacity: 0.4; 
+    opacity: 0.4;
     cursor: pointer;
 }
 
@@ -61,12 +61,12 @@ header>nav>ul>li a:visited {
     cursor: pointer;
 }
 
-img:hover{
-opacity: 0.4;    
+img:hover {
+    opacity: 0.4;
 }
 
 a:hover {
-    opacity: 0.4; 
+    opacity: 0.4;
 }
 
 .pDescArt1 {
@@ -150,16 +150,17 @@ a:hover {
     justify-self: center;
 }
 
-.divProdDescArtLast p:nth-child(2), .LeftdivProdDescArtLast p:nth-child(2) {
+.divProdDescArtLast p:nth-child(2),
+.LeftdivProdDescArtLast p:nth-child(2) {
     margin-top: 6vh;
 }
 
-body > main > article.artLast > div:nth-child(1) > div > p:nth-child(1)
-.divProdDescArtLast p:nth-child(), .LeftdivProdDescArtLast p:nth-child(1) {
-    font-weight:bold;
+body>main>article.artLast>div:nth-child(1)>div>p:nth-child(1) .divProdDescArtLast p:nth-child(),
+.LeftdivProdDescArtLast p:nth-child(1) {
+    font-weight: bold;
 }
 
-.artLast > div:nth-child(2) {
+.artLast>div:nth-child(2) {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -173,14 +174,14 @@ body > main > article.artLast > div:nth-child(1) > div > p:nth-child(1)
 }
 
 .clsBolder {
-font-weight: 600;
+    font-weight: 600;
 }
 
-footer{
-    width:90%;
-    margin-top:9vh;
-    margin-bottom:2.5vh;
-    margin-left:auto;
+footer {
+    width: 90%;
+    margin-top: 9vh;
+    margin-bottom: 2.5vh;
+    margin-left: auto;
     margin-right: auto;
     display: grid;
     grid-template-columns: 178px 178px;
@@ -188,7 +189,7 @@ footer{
     color: #848484;
 }
 
-footer > p:nth-child(2) > span {
-margin-left: 1vw;
-margin-right: 1vw;
+footer>p:nth-child(2)>span {
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
