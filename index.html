@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
     <title>Document</title>
 </head>
 
@@ -14,19 +15,24 @@
 
     <header>
         <h1 class="clsLogo">THE DESIGN SHOP</h1>
-        <nav>
-            <ul>
+       
+        <nav id="myNav">
+            <ul id="myLinks">
                 <li><a href="">Weekly Recommandations</a></li>
                 <li> <a href="">Contacts</a></li>
                 <li><a href="">T D B</a></li>
             </ul>
         </nav>
+    <!-- ---------------- https://www.w3schools.com/howto/howto_js_mobile_navbar.asp ---------------- -->    
+       <div id="divImgIcon">
+         <img src="./assets/img/menu.png" id="imgIcon" class="icon" alt="" onclick="displayMenu()"> 
+      </div>
     </header>
-
     <main>
-<!-- ---------------- ---------------- First part ---------------- ---------------- -->
+        <!-- ---------------- ---------------- First part ---------------- ---------------- -->
         <article class="art1">
-            <img src="./assets/img/1.png" alt="Kanken Art Laptop 15 Special Edition Backpack Fjallraven">
+            <img id="01png" src="./assets/img/1.png" alt="Kanken Art Laptop 15 Special Edition Backpack Fjallraven" 
+            onclick="fn_open_link1()" >
             <div class="pDescArt1">
                 <div class="leftArt1Desc">
                     <p>Kanken Art Laptop 15 Special Edition Backpack</p>
@@ -40,7 +46,7 @@
 
         <article class="art2">
             <!-- 1 -->
-            <div class="divArt2"><img src="./assets/img/d2.png" alt="Swing Arm Wood Desk Lamp">
+            <div class="divArt2"><img src="./assets/img/d2.png" alt="Swing Arm Wood Desk Lamp" onclick="fn_open_link2()">
                 <div class="divProdDescArt2">
                     <p>Swing Arm Wood Desk Lamp</p>
                     <p>$36.00</p>
@@ -48,7 +54,7 @@
                 </div>
             </div>
             <!-- 2 -->
-            <div class="divArt2"><img src="./assets/img/u6.png" alt="Hajo Backpack">
+            <div class="divArt2"><img src="./assets/img/u6.png" alt="Hajo Backpack" onclick="fn_open_link3()">
                 <div class="divProdDescArt2">
                     <p>Hajo Backpack</p>
                     <p>$89.00</p>
@@ -56,7 +62,7 @@
                 </div>
             </div>
             <!-- 3-->
-            <div class="divArt2"><img src="./assets/img/u10.png" alt="Zed Bamboo Longboard">
+            <div class="divArt2"><img src="./assets/img/u10.png" alt="Zed Bamboo Longboard" onclick="fn_open_link4()">
                 <div class="divProdDescArt2">
                     <p>Zed Bamboo Longboard</p>
                     <p>$60.00</p>
@@ -64,7 +70,7 @@
                 </div>
             </div>
             <!-- 4 -->
-            <div class="divArt2"><img src="./assets/img/u9.png" alt="Electric pour-Over Kettle">
+            <div class="divArt2"><img src="./assets/img/u9.png" alt="Electric pour-Over Kettle" onclick="fn_open_link5()">
                 <div class="divProdDescArt2">
                     <p>Electric pour-Over Kettle</p>
                     <p>$149.00</p>
@@ -72,7 +78,7 @@
                 </div>
             </div>
             <!-- 5 -->
-            <div class="divArt2"><img src="./assets/img/h17.png" alt="Woodie Vintage Car">
+            <div class="divArt2"><img src="./assets/img/h17.png" alt="Woodie Vintage Car" onclick="fn_open_link6()">
                 <div class="divProdDescArt2">
                     <p>Woodie Vintage Car</p>
                     <p>$35.00</p>
@@ -80,7 +86,7 @@
                 </div>
             </div>
             <!-- 6 -->
-            <div class="divArt2"><img src="./assets/img/c3.png" alt="Logo Modernism">
+            <div class="divArt2"><img src="./assets/img/c3.png" alt="Logo Modernism" onclick="fn_open_link7()">
                 <div class="divProdDescArt2">
                     <p>Logo Modernism</p>
                     <p>$60.00</p>
@@ -88,9 +94,9 @@
                 </div>
             </div>
         </article>
-<!-- ---------------- ---------------- Second part ---------------- ---------------- -->
+        <!-- ---------------- ---------------- Second part ---------------- ---------------- -->
         <article class="art1">
-            <img src="./assets/img/d7.png" alt="Dieter Rams: As little Design as Possible">
+            <img src="./assets/img/d7.png" alt="Dieter Rams: As little Design as Possible" onclick="fn_open_link8()">
             <div class="pDescArt1">
                 <div class="leftArt1Desc">
                     <p>Dieter Rams: As little Design as Possible</p>
@@ -104,7 +110,7 @@
 
         <article class="art2">
             <!-- 1 -->
-            <div class="divArt2"><img src="./assets/img/c6.png" alt="The Eye">
+            <div class="divArt2"><img src="./assets/img/c6.png" alt="The Eye" onclick="fn_open_link9()">
                 <div class="divProdDescArt2">
                     <p>The Eye</p>
                     <p>$28.00</p>
@@ -112,7 +118,7 @@
                 </div>
             </div>
             <!-- 2 -->
-            <div class="divArt2"><img src="./assets/img/h13.png" alt="Gather Desk Organizer">
+            <div class="divArt2"><img src="./assets/img/h13.png" alt="Gather Desk Organizer" onclick="fn_open_link10()">
                 <div class="divProdDescArt2">
                     <p>Gather Desk Organizer</p>
                     <p>$149.00</p>
@@ -120,7 +126,7 @@
                 </div>
             </div>
             <!-- 3-->
-            <div class="divArt2"><img src="./assets/img/h8.png" alt="Dipped Canteen">
+            <div class="divArt2"><img src="./assets/img/h8.png" alt="Dipped Canteen" onclick="fn_open_link11()">
                 <div class="divProdDescArt2">
                     <p>Dipped Canteen</p>
                     <p>$28.00</p>
@@ -128,7 +134,7 @@
                 </div>
             </div>
             <!-- 4 -->
-            <div class="divArt2"><img src="./assets/img/h2.png" alt="Sayl Office Chair White">
+            <div class="divArt2"><img src="./assets/img/h2.png" alt="Sayl Office Chair White" onclick="fn_open_link12()">
                 <div class="divProdDescArt2">
                     <p>Sayl Office Chair White</p>
                     <p>$599.00</p>
@@ -136,7 +142,7 @@
                 </div>
             </div>
             <!-- 5 -->
-            <div class="divArt2"><img src="./assets/img/d5.png" alt="Three Cherry Wood Notebook">
+            <div class="divArt2"><img src="./assets/img/d5.png" alt="Three Cherry Wood Notebook" onclick="fn_open_link13()">
                 <div class="divProdDescArt2">
                     <p>Three Cherry Wood Notebook</p>
                     <p>$13.00</p>
@@ -144,7 +150,7 @@
                 </div>
             </div>
             <!-- 6 -->
-            <div class="divArt2"><img src="./assets/img/c5.png" alt="From Japan">
+            <div class="divArt2"><img src="./assets/img/c5.png" alt="From Japan" onclick="fn_open_link14()">
                 <div class="divProdDescArt2">
                     <p>From Japan</p>
                     <p>$16.00</p>
@@ -152,222 +158,226 @@
                 </div>
             </div>
         </article>
-<!-- ---------------- ---------------- Third part ---------------- ---------------- -->
+        <!-- ---------------- ---------------- Third part ---------------- ---------------- -->
 
-<article class="art1">
-    <img src="./assets/img/h6.png" alt="Dieter Rams: As little Design as Possible">
-    <div class="pDescArt1">
-        <div class="leftArt1Desc">
-            <p>Arigato Desk Lamp</p>
-            <p>Grupa</p>
-        </div>
-        <div class="rightArt1Desc">
-            <p>$380.00</p>
-        </div>
-    </div>
-</article>
-
-<article class="art2">
-    <!-- 1 -->
-    <div class="divArt2"><img src="./assets/img/u7.png" alt="Winston Regal Watch">
-        <div class="divProdDescArt2">
-            <p>Winston Regal Watch</p>
-            <p>$58.00</p>
-            <p>Komono</p>
-        </div>
-    </div>
-    <!-- 2 -->
-    <div class="divArt2"><img src="./assets/img/d4.png" alt="Letter H Poster">
-        <div class="divProdDescArt2">
-            <p>Letter H Poster</p>
-            <p>$45.00</p>
-            <p>Hey Studio</p>
-        </div>
-    </div>
-    <!-- 3-->
-    <div class="divArt2"><img src="./assets/img/u11.png" alt="Coffee Can">
-        <div class="divProdDescArt2">
-            <p>Coffee Can</p>
-            <p>$11.00</p>
-            <p>Blue Bottle Company</p>
-        </div>
-    </div>
-    <!-- 4 -->
-    <div class="divArt2"><img src="./assets/img/h9.png" alt="Beoplay H4">
-        <div class="divProdDescArt2">
-            <p>Beoplay H4</p>
-            <p>$160.00</p>
-            <p>Bang & Olufsen</p>
-        </div>
-    </div>
-    <!-- 5 -->
-    <div class="divArt2"><img src="./assets/img/p2.png" alt="Make it now">
-        <div class="divProdDescArt2">
-            <p>Make it now</p>
-            <p>$22.00</p>
-            <p>Anthony Burill </p>
-        </div>
-    </div>
-    <!-- 6 -->
-    <div class="divArt2"><img src="./assets/img/c5.png" alt="From Japan">
-        <div class="divProdDescArt2">
-            <p>Black Side Chair</p>
-            <p>$54.00</p>
-            <p>Eames Style</p>
-        </div>
-    </div>
-</article>
-
-<!-- ---------------- ---------------- Fourth part ---------------- ---------------- -->
-
-<article class="art1">
-    <img src="./assets/img/c22.png" alt="Min: The New Simplicity in Graphic Design">
-    <div class="pDescArt1">
-        <div class="leftArt1Desc">
-            <p>Min: The New Simplicity in Graphic Design</p>
-            <p>Thames & Hudson</p>
-        </div>
-        <div class="rightArt1Desc">
-            <p>$28.00</p>
-        </div>
-    </div>
-</article>
-
-<article class="art2">
-    <!-- 1 -->
-    <div class="divArt2"><img src="./assets/img/c1.png" alt="Grid systems in graphic design">
-        <div class="divProdDescArt2">
-            <p>Grid systems in graphic design</p>
-            <p>$42.00</p>
-            <p>Josef Müller-Brockmann</p>
-        </div>
-    </div>
-    <!-- 2 -->
-    <div class="divArt2"><img src="./assets/img/u12.png" alt="Card Wallet">
-        <div class="divProdDescArt2">
-            <p>Card Wallet</p>
-            <p>$42.00</p>
-            <p>Herschel</p>
-        </div>
-    </div>
-    <!-- 3-->
-    <div class="divArt2"><img src="./assets/img/p3.png" alt="Coffee Can">
-        <div class="divProdDescArt2">
-            <p>Classic Advice Print Black</p>
-            <p>$30.00</p>
-            <p>Good Fucking Design Advice</p>
-        </div>
-    </div>
-    <!-- 4 -->
-    <div class="divArt2"><img src="./assets/img/life-15.png" alt="Magic Mouse 2">
-        <div class="divProdDescArt2">
-            <p>Magic Mouse 2</p>
-            <p>$92.00</p>
-            <p>Apple</p>
-        </div>
-    </div>
-    <!-- 5 -->
-    <div class="divArt2"><img src="./assets/img/life-17.png" alt="Travel Trumbler">
-        <div class="divProdDescArt2">
-            <p>Travel Trumbler</p>
-            <p>$34.00</p>
-            <p>Kinto</p>
-        </div>
-    </div>
-    <!-- 6 -->
-    <div class="divArt2"><img src="./assets/img/life-16.png" alt="Magic Keyboard">
-        <div class="divProdDescArt2">
-            <p>Magic Keyboard</p>
-            <p>$139.00</p>
-            <p>Apple</p>
-        </div>
-    </div>
-</article>
-
-<!-- ---------------- ---------------- Fifth part ---------------- ---------------- -->
-
-
-<article class="art1">
-    <img src="./assets/img/u8.png" alt="Bottle Grinder">
-    <div class="pDescArt1">
-        <div class="leftArt1Desc">
-            <p>Bottle Grinder</p>
-            <p>Menu</p>
-        </div>
-        <div class="rightArt1Desc">
-            <p>$75.00</p>
-        </div>
-    </div>
-</article>
-
-<article class="art2">
-    <!-- 1 -->
-    <div class="divArt2"><img src="./assets/img/home-10.png" alt="Geo Thermos">
-        <div class="divProdDescArt2">
-            <p>Geo Thermos</p>
-            <p>$62.00</p>
-            <p>Norman Copenhagen</p>
-        </div>
-    </div>
-    <!-- 2 -->
-    <div class="divArt2"><img src="./assets/img/home-10.png" alt="Womb Chair & Ottoman">
-        <div class="divProdDescArt2">
-            <p>Womb Chair & Ottoman</p>
-            <p>$799.00</p>
-            <p>Kardiel</p>
-        </div>
-    </div>
-    <!-- 3-->
-    <div class="divArt2"><img src="./assets/img/home-9.png" alt="Water Filter Glass Carafe">
-        <div class="divProdDescArt2">
-            <p>Water Filter Glass Carafe</p>
-            <p>$30.00</p>
-            <p>Soma</p>
-        </div>
-    </div>
-</article>
-
-<!-- ---------------- ---------------- Last part ---------------- ---------------- -->
-
-<article class="artLast">
-    <!-- 1 -->
-    <div class="divArtLast">
-        <div class="divProdDescArtLast">
-            <p>Geo Thermos</p>
-            <p>$62.00</p>
-            <p>Norman Copenhagen</p>
-        </div>
-    </div>
-    <!-- 2 -->
-    <div class="divArtLast">
-        <div class="divProdDescArtLast">
-            <p>Womb Chair & Ottoman</p>
-            <p>$799.00</p>
-            <p>Kardiel</p>
-        </div>
-    </div>
-    <!-- 3-->
-    <div class="divArt2">
-        <div class="divProdDescArtLast">
-            <p>Water Filter Glass Carafe</p>
-            <p>$30.00</p>
-            <p>Soma</p>
-        </div>
-    </div>
-
-        <!-- 4-->
-        <div class="divArt2">
-            <div class="divProdDescArtLast">
-                <p>Water Filter Glass Carafe</p>
-                <p>$30.00</p>
-                <p>Soma</p>
+        <article class="art1">
+            <img src="./assets/img/h6.png" alt="Dieter Rams: As little Design as Possible" onclick="fn_open_link15()">
+            <div class="pDescArt1">
+                <div class="leftArt1Desc">
+                    <p>Arigato Desk Lamp</p>
+                    <p>Grupa</p>
+                </div>
+                <div class="rightArt1Desc">
+                    <p>$380.00</p>
+                </div>
             </div>
-        </div>
-</article>
+        </article>
 
-</main>
+        <article class="art2">
+            <!-- 1 -->
+            <div class="divArt2"><img src="./assets/img/u7.png" alt="Winston Regal Watch" onclick="fn_open_link16()">
+                <div class="divProdDescArt2">
+                    <p>Winston Regal Watch</p>
+                    <p>$58.00</p>
+                    <p>Komono</p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="divArt2"><img src="./assets/img/d4.png" alt="Letter H Poster" onclick="fn_open_link17()" >
+                <div class="divProdDescArt2">
+                    <p>Letter H Poster</p>
+                    <p>$45.00</p>
+                    <p>Hey Studio</p>
+                </div>
+            </div>
+            <!-- 3-->
+            <div class="divArt2"><img src="./assets/img/u11.png" alt="Coffee Can" onclick="fn_open_link18()">
+                <div class="divProdDescArt2">
+                    <p>Coffee Can</p>
+                    <p>$11.00</p>
+                    <p>Blue Bottle Company</p>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="divArt2"><img src="./assets/img/h9.png" alt="Beoplay H4" onclick="fn_open_link19()">
+                <div class="divProdDescArt2">
+                    <p>Beoplay H4</p>
+                    <p>$160.00</p>
+                    <p>Bang & Olufsen</p>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="divArt2"><img src="./assets/img/p2.png" alt="Make it now" onclick="fn_open_link20()">
+                <div class="divProdDescArt2">
+                    <p>Make it now</p>
+                    <p>$22.00</p>
+                    <p>Anthony Burill </p>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="divArt2"><img src="./assets/img/c5.png" alt="From Japan" onclick="fn_open_link21()">
+                <div class="divProdDescArt2">
+                    <p>Black Side Chair</p>
+                    <p>$54.00</p>
+                    <p>Eames Style</p>
+                </div>
+            </div>
+        </article>
 
-<footer></footer>
+        <!-- ---------------- ---------------- Fourth part ---------------- ---------------- -->
+
+        <article class="art1">
+            <img src="./assets/img/c22.png" alt="Min: The New Simplicity in Graphic Design" onclick="fn_open_link22()">
+            <div class="pDescArt1">
+                <div class="leftArt1Desc">
+                    <p>Min: The New Simplicity in Graphic Design</p>
+                    <p>Thames & Hudson</p>
+                </div>
+                <div class="rightArt1Desc">
+                    <p>$28.00</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="art2">
+            <!-- 1 -->
+            <div class="divArt2"><img src="./assets/img/c1.png" alt="Grid systems in graphic design" onclick="fn_open_link23()">
+                <div class="divProdDescArt2">
+                    <p>Grid systems in graphic design</p>
+                    <p>$42.00</p>
+                    <p>Josef Müller-Brockmann</p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="divArt2"><img src="./assets/img/u12.png" alt="Card Wallet" onclick="fn_open_link24()">
+                <div class="divProdDescArt2">
+                    <p>Card Wallet</p>
+                    <p>$42.00</p>
+                    <p>Herschel</p>
+                </div>
+            </div>
+            <!-- 3-->
+            <div class="divArt2"><img src="./assets/img/p3.png" alt="Coffee Can" onclick="fn_open_link25()">
+                <div class="divProdDescArt2">
+                    <p>Classic Advice Print Black</p>
+                    <p>$30.00</p>
+                    <p>Good Fucking Design Advice</p>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="divArt2"><img src="./assets/img/life-15.png" alt="Magic Mouse 2" onclick="fn_open_link26()">
+                <div class="divProdDescArt2">
+                    <p>Magic Mouse 2</p>
+                    <p>$92.00</p>
+                    <p>Apple</p>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="divArt2"><img src="./assets/img/life-17.png" alt="Travel Trumbler" onclick="fn_open_link27()">
+                <div class="divProdDescArt2">
+                    <p>Travel Trumbler</p>
+                    <p>$34.00</p>
+                    <p>Kinto</p>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="divArt2"><img src="./assets/img/life-16.png" alt="Magic Keyboard" onclick="fn_open_link28()">
+                <div class="divProdDescArt2">
+                    <p>Magic Keyboard</p>
+                    <p>$139.00</p>
+                    <p>Apple</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- ---------------- ---------------- Fifth part ---------------- ---------------- -->
+
+
+        <article class="art1">
+            <img src="./assets/img/u8.png" alt="Bottle Grinder" onclick="fn_open_link29()">
+            <div class="pDescArt1">
+                <div class="leftArt1Desc">
+                    <p>Bottle Grinder</p>
+                    <p>Menu</p>
+                </div>
+                <div class="rightArt1Desc">
+                    <p>$75.00</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="art2">
+            <!-- 1 -->
+            <div class="divArt2"><img src="./assets/img/home-8.png" alt="Geo Thermos" onclick="fn_open_link30()">
+                <div class="divProdDescArt2">
+                    <p>Geo Thermos</p>
+                    <p>$62.00</p>
+                    <p>Norman Copenhagen</p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="divArt2"><img src="./assets/img/home-10.png" alt="Womb Chair & Ottoman" onclick="fn_open_link31()">
+                <div class="divProdDescArt2">
+                    <p>Womb Chair & Ottoman</p>
+                    <p>$799.00</p>
+                    <p>Kardiel</p>
+                </div>
+            </div>
+            <!-- 3-->
+            <div class="divArt2"><img src="./assets/img/home-9.png" alt="Water Filter Glass Carafe" onclick="fn_open_link32()">
+                <div class="divProdDescArt2">
+                    <p>Water Filter Glass Carafe</p>
+                    <p>$30.00</p>
+                    <p>Soma</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- ---------------- ---------------- Last part ---------------- ---------------- -->
+
+        <article class="artLast">
+            <!-- 1 -->
+            <div class="divArtLast">
+                <div class="divProdDescArtLast">
+                    <p class="clsBolder">The Design Shop</p>
+                    <p>Carefully curated online design store,</p>
+                    <p>founded and designed by <span class="clsBold"> Ruby Bacanovic</span></p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="divArtLast">
+                <div class="LeftdivProdDescArtLast">
+                    <p class="clsBolder">Contact</p>
+                    <p class="clsBold">Email us</p>
+                    <p class="clsBold">Work with us</p>
+                </div>
+                <div class="LeftdivProdDescArtLast">
+                <p class="clsBolder">Newsletter</p>
+                    <p>Click here to <span class="clsBold">subscribe</span>.</p>
+                    <p class="clsItalic">Don't worry. We hate spam too.</p>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="divArtLast">
+                <div class="divProdDescArtLast">
+                    <p class="clsBolder">Find Us Here</p>
+                    <p class="clsBolder">Facebook</p>
+                    <p class="clsBolder">Instagram</p>
+                    <p class="clsBolder">Twitter</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+      
+        <p>© 2019 The Design Shop </p>
+        <p><span class="clsBold">•</span> The Design Blog</p>
+     
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
