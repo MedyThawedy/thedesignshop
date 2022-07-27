@@ -44,7 +44,7 @@
     }
 
     ul {
-        grid-template-columns: 41% !important;
+        grid-template-columns: 45% !important;
         height: 13vh;
     }
 
@@ -52,10 +52,36 @@
         margin-right: 0;
     }
 
+    .art2 {
+        grid-template-columns: 1fr;
+    }
+
+    .artLast {
+        grid-template-columns: 1fr;
+    }
+
+    .artLast > div:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top:5vh;
+    }
+
+    .artLast>div:nth-child(3) {
+        display: grid;
+        justify-self: start;
+        margin-top:5vh;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
+@media only screen and (max-width: 560px) {
+ul {
+    grid-template-columns: 60% !important;
+    height: 13vh;
+}
+
 }

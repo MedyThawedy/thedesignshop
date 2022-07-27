@@ -51,9 +51,22 @@ header>nav>ul>li a:visited {
     margin-top: 5vh;
 }
 
+.clsLogo:hover {
+    opacity: 0.4; 
+    cursor: pointer;
+}
+
 .art1>img {
     width: 100%;
     cursor: pointer;
+}
+
+img:hover{
+opacity: 0.4;    
+}
+
+a:hover {
+    opacity: 0.4; 
 }
 
 .pDescArt1 {
