@@ -4,3 +4,82 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Karla';
+}
+
+.clsLogo {
+ font-size: 1.5rem;   
+}
+
+header {
+    display:grid;
+    grid-template-columns: 24% 76%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    align-items: baseline;
+}
+
+header > nav > ul {
+    display:grid;
+    grid-template-columns: 25% 10% 10%;
+    justify-content: end;
+    grid-gap:10px;
+    list-style-type: none; 
+    justify-items: end;
+    font-weight: bold;
+}
+
+header > nav > ul > li a{
+    text-decoration: none;
+}
+
+header > nav > ul > li a:visited{
+   color: #323A45;
+}
+
+.art1 {
+    width:90%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+
+.art1 > img {
+    width: 100%;
+}
+
+.pDescArt1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 1vh;
+}
+
+.rightArt1Desc {
+    display:grid;
+    justify-content: end;
+}
+
+.leftArt1Desc > p:nth-child(2) {
+color:#848484;
+}
+
+.art2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 45px;
+    justify-items: center;
+    margin-top: 5vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.art2 div {
+    width: 350px;
+}
+
+.div1Art2 img {
+    width:100%;
+}
