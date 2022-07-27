@@ -30,3 +30,11 @@ function fn_open_link1() { window.open("https://amzn.to/32MmHgL");}
  function fn_open_link30() { window.open("https://amzn.to/2JLtxvk");}
  function fn_open_link31() { window.open("https://amzn.to/2YdSBPy");}
  function fn_open_link32() { window.open("https://amzn.to/2LCEfGP");}
+
+ function displayMenu() {
+    console.log("It works!");
+    
+    document.getElementById("divImgIcon").style.display="none";
+    document.getElementById("myNav").style.display = "block";
+   
+  }

@@ -32,6 +32,10 @@ header>nav>ul {
     font-weight: bold;
 }
 
+header > div> img.icon {
+    display:none;
+}
+
 header>nav>ul>li a {
     text-decoration: none;
 }

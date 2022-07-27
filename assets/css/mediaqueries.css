@@ -1,18 +1,61 @@
+/* https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+
+@media only screen and (max-width: 1198px) {
+    header>nav>ul {
+        grid-template-columns: 35% 10% 10%;
+    }
+
+    body>header>nav>ul>li:nth-child(1)>a {
+        margin-right: 1vw;
+    }
+
+}
+
 @media only screen and (max-width: 966px) {
     .clsLogo {
-        font-size:1rem;
-    }    
-    body > header > nav > ul {
-        font-size:0.75rem;
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+    body>header>nav>ul {
+        font-size: 0.75rem;
     }
 
     header {
         grid-template-columns: 31% 69%;
     }
 }
+/* Mobile Navigation Menu */
+@media only screen and (max-width: 768px) {
+    header>nav {
+        display: none;
+    }
+
+   header > div > img {
+        display:grid !important;
+        justify-content: end ;
+        width:25px;
+        cursor:pointer;
+    }
+     
+    body > header > div {
+        display:grid;
+        justify-content:end;
+    }
+
+    ul {
+        grid-template-columns: 41% !important;
+        height: 13vh;
+    }
+
+    body>header>nav>ul>li:nth-child(1)>a {
+        margin-right: 0;
+    }
+
+}
 
 @media only screen and (max-width: 600px) {
     body {
-      background-color: lightblue;
+        background-color: lightblue;
     }
-  }
+}
