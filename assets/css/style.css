@@ -63,6 +63,7 @@ header>nav>ul>li a:visited {
     justify-content: end;
 }
 
+
 .leftArt1Desc>p:nth-child(2) {
     color: #848484;
 }
@@ -114,13 +115,18 @@ header>nav>ul>li a:visited {
     margin-right: auto;
 }
 
-.artLast>div:nth-child(1),
-div:nth-child(2),
-div:nth-child(3) {
+/* 
+.divProdDescArtLast,
+.LeftdivProdDescArtLast,
+.divProdDescArtLast 
+*/
+
+.LeftdivProdDescArtLast,
+.divProdDescArtLast,
+.divArtLast {
     display: grid;
     justify-self: start;
 }
-
 
 .artLast>div:nth-child(3) {
     display: grid;

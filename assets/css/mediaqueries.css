@@ -1,0 +1,18 @@
+@media only screen and (max-width: 966px) {
+    .clsLogo {
+        font-size:1rem;
+    }    
+    body > header > nav > ul {
+        font-size:0.75rem;
+    }
+
+    header {
+        grid-template-columns: 31% 69%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
